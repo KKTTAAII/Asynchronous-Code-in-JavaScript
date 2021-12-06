@@ -1,0 +1,19 @@
+.child-div {
+    width: 200px;
+    border-color: black;
+    border-style: solid;
+    margin-left: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.all-nums {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
