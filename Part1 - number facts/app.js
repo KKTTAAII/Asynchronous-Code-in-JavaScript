@@ -1,10 +1,10 @@
-const url = "http://numbersapi.com/";
+const URL = "http://numbersapi.com/";
 const fourNumbers = [];
 const favNumbers = [2,13,18,25];
 const parentDiv = document.querySelector(".all-nums");
 
 for (let i = 0; i < favNumbers.length; i++){
-    fourNumbers.push(axios.get(url+`${favNumbers[i]}?json`))
+    fourNumbers.push(axios.get(URL+`${favNumbers[i]}?json`))
 }
 
 function addFactsToPage(fact){

@@ -1,13 +1,13 @@
-const url = "https://pokeapi.co/api/v2/pokemon/";
+const URL = "https://pokeapi.co/api/v2/pokemon/";
 let allPokemonCount;
 let randomPokemonsURLs = [];
 let selectSpeciesURLs = [];
 
 function getPokemons() {
-  axios.get("https://pokeapi.co/api/v2/pokemon/")
+  axios.get(URL)
     .then(res => {
       allPokemonCount = res.data.count;
-      return axios.get(`https://pokeapi.co/api/v2/pokemon/?limit=${allPokemonCount}`);
+      return axios.get(`${URL}?limit=${allPokemonCount}`);
     })
     .then(res => {
       let allPokemons = res.data.results;

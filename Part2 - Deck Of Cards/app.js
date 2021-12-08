@@ -1,13 +1,13 @@
-const url = `http://deckofcardsapi.com/api/deck/new/draw/?deck_count=1`;
+const URL = `http://deckofcardsapi.com/api/deck/new/draw/?deck_count=1`;
 let cards = [];
 
 //1st question
-axios.get(url).then((res) => {
+axios.get(URL).then((res) => {
   console.log(`${res.data.cards[0].value} of ${res.data.cards[0].suit}`);
 });
 
 //2nd question
-axios.get(url)
+axios.get(URL)
   .then((res) => {
     let deckID = res.data.deck_id;
     cards.push(`${res.data.cards[0].value} of ${res.data.cards[0].suit}`);
